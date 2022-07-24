@@ -77,12 +77,7 @@ export default function Navbar() {
                         <ul className="flex-2 items-center text-right">
                             {data.sanityAppearances.header.mainNav.items.map((links) => {
                                 return (
-                                    <Link 
-                                        className="mx-2" 
-                                        to={(links.internalLink._type === "post" && `/blog/${links.internalLink.slug.current}`) || (links.internalLink._type === "legal" && `/legal/${links.internalLink.slug.current}`) || (links.internalLink._type === "author" && `/authors/${links.internalLink.slug.current}`)}
-                                    >
-                                        {links.internalLink?.name ?? links.internalLink?.title}
-                                    </Link>
+                                    <></>
                                 )
                             })}
                         </ul>
