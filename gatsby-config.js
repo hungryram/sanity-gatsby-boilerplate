@@ -11,6 +11,23 @@ module.exports = {
         "dataset": "production"
       }
     },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true
+        },
+      }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.example.com`,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-postcss",
